@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update product details</title>
+</head>
+<body>
+	<form action="search" method="post">
+		<h3>Product Update</h3>
+		
+		<fieldset>
+			<legend>Product ID</legend>
+			<input type="number" name="productid"/>
+		</fieldset><br><br>
+		
+		For fields that are not to be updated, leave the inputs blank.
+		
+		<fieldset>
+			<legend>Product Name</legend>
+			<input type="text" name="name"/>
+		</fieldset><br><br>
+		
+		<fieldset>
+			<legend>Product Category</legend>
+			<select name="category">
+				<option value="">Please select an option</option>
+				<option value="Shoes">Shoes</option>
+				<option value="Sports">Sports</option>
+				<option value="Stationary">Stationary</option>
+			</select>
+		</fieldset><br><br>
+		
+		<fieldset>
+			Price: 	<input type="number" name="price"/>
+		</fieldset><br><br><br>
+		
+		<input type="submit" value="Update Product"/>
+	</form>
+</body>
+</html>
